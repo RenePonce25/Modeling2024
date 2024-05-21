@@ -1,6 +1,6 @@
 //Maya ASCII 2025 scene
 //Name: Unit 4 challenge.ma
-//Last modified: Mon, May 20, 2024 05:49:57 PM
+//Last modified: Mon, May 20, 2024 05:58:54 PM
 //Codeset: 1252
 requires maya "2025";
 requires "stereoCamera" "10.0";
@@ -13,23 +13,23 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202402161156-0caf8d1269";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 22631)";
-fileInfo "UUID" "407B9670-4664-2CFA-5F56-E99D9161B865";
+fileInfo "UUID" "0A0095F4-4569-EDEF-B367-B49311BEB484";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "05AEEDB2-4A08-4C4F-FAE4-31B675E1E0CF";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 5.4416531051972283 5.9242330130104142 7.2758923018715942 ;
-	setAttr ".r" -type "double3" -21.600000000001746 46.400000000000318 2.3060212767712966e-15 ;
-	setAttr ".rpt" -type "double3" -7.4842955056218113e-16 1.7990950073307682e-16 5.9514190051127051e-17 ;
+	setAttr ".t" -type "double3" 7.5457068067788988 3.4431990801836507 -7.1836084941784284 ;
+	setAttr ".r" -type "double3" -5.3999999999999693 127.59999999999835 0 ;
+	setAttr ".rpt" -type "double3" -8.0670104240395153e-16 1.8595454546252982e-16 -1.6290493797019092e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A762B4DA-436B-9FE1-51A1-86A9329B089A";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 7.6770698115715286;
+	setAttr ".coi" 12.97771380668688;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0.39017482308143858 0.6302963600283914 0.16233603150213219 ;
+	setAttr ".tp" -type "double3" -2.6907690763473497 2.2218883231059827 0.6995391751911022 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "EA863F6F-457A-F1F8-E690-4B8A23071B02";
@@ -14756,7 +14756,7 @@ createNode groupParts -n "groupParts22";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 1 "f[0:251]";
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "7DCA3A0C-4D11-E85E-B6C5-378C577FA602";
+	rename -uid "3F98AF55-4C7C-30B3-E4E8-C7A776BD0F10";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
